@@ -1,0 +1,11 @@
+{
+    "port" : 83,
+    "path" : "",
+    "extension" : ".txt",
+    "smtphost" : "",
+    "smtptls" : true,
+    "smtpport": "587",
+    "smtplogin": "",
+    "smtppassword" : "",
+    "from":"" 
+}
