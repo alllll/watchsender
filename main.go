@@ -16,9 +16,7 @@ func main() {
 	fileschan := make(chan models.Email)
 	go watcher.Watch(config.Path, config.Extension, fileschan)
 	go sender.Sender(fileschan, config.Smtphost, config.Smtpport, config.Smtplogin, config.Smtppassword, config.From)
-	/*for s := range fileschan {
-		fmt.Println(s)
-	}*/
+
 	var a string
 	fmt.Scanln(&a)
 	fmt.Println(a)
